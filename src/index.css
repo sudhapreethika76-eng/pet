@@ -1,0 +1,104 @@
+:root {
+  /* Zuvipaw Brand Palette */
+  --forest-green: #1B3B36;
+  --forest-green-dark: #122824;
+  --forest-green-light: #244C46;
+  --forest-green-subtle: #EDF4F2;
+  --warm-cream: #F9F6F0;
+  --warm-cream-alt: #F3EFE6;
+  --peach-orange: #E87352;
+  --peach-orange-hover: #D76241;
+  --peach-light: #FDEDE8;
+  --mint-light: #E4F3ED;
+  --mint-accent: #3A8B74;
+  --white: #FFFFFF;
+  --text-dark: #1B2925;
+  --text-muted: #5D6D68;
+  --text-light: #8E9E99;
+  --border-light: #E8E5DC;
+  --border-subtle: #F0ECE4;
+  --gold-star: #F5A623;
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(27, 59, 54, 0.05);
+  --shadow-md: 0 8px 24px rgba(27, 59, 54, 0.08);
+  --shadow-lg: 0 16px 36px rgba(27, 59, 54, 0.12);
+  --shadow-glow: 0 10px 30px rgba(232, 115, 82, 0.25);
+
+  /* Radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition: all 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--warm-cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--warm-cream-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D3CF;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--forest-green-light);
+}
